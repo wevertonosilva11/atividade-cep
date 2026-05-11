@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head> 
+<body>
+
+    <div class="container">
+            <h2>Busca de CEP</h2>
+
+          <!--Campo de busca e botão-->
+            <input type="text" id="campoBusca" placeholder="Digite o nome do CEP">
+            <button id="btnBuscar">Pesquisar</button>
+
+            <!-- Card com as informações do CEP (começa escondido)-->
+            <div id="resultado" class="escondido"> 
+             <h3 id="CEPNome"></h3>
+             <p><strong>CEP:</strong> <span id="CEP"></span></p>
+               <p><strong>Longadouro:</strong> <span id="Longadouro"></span></p>
+                 <p><strong>Bairro:</strong> <span id="Bairro"></span></p>
+                   <p><strong>Cidade:</strong> <span id="Cidade"></span></p>
+                     <p><strong>Estado:</strong> <span id="Cidade"></span></p>
+            </div>
+
+            <!--Mensagem de erro (começa escondida)-->
+            <div id="msgErro" class="escondido">
+               CEP não encontrado, tente novamente!
+            </div>
+           
+        </div>
+    
+</body>
+</html>
